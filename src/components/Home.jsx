@@ -54,7 +54,7 @@ export default function Home() {
 
           {/* Resume */}
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1rR7YwsudjVVtO2pSOKhugVtUuv8eUWhe/view?usp=drive_link"
             className="flex items-center gap-2 px-6 py-3 rounded-lg 
             border border-white/30 text-white 
             hover:border-orange-400 hover:text-orange-400 
