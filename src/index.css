@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Dark mode variant */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Full height fix */
+html, body, #root {
+  height: 100%;
+}
+
+/* 🌈 Gradient Background */
+body {
+  color: black;
+  transition: all 0.3s ease;
+
+  
+  background: linear-gradient(135deg, #151414, #121111, #000000);
+
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* 🌙 Dark Mode */
+.dark body {
+  color: white;
+  background: linear-gradient(135deg, #151414, #121111, #000000);
+  
+}
+
+/* Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
